@@ -2,17 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyType : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+[CreateAssetMenu(fileName = "New Enemy Type", menuName = "Enemy Type")]
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+public class EnemyType : ScriptableObject
+{
+    public Color enemyColor = Color.white;
+    public float enemySpeed = 5;
+    public Vector3 enemyScale = Vector3.one;
+    public string typeName = "type";
 }
