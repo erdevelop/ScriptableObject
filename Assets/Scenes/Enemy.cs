@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] private EnemyType enemyType = null;
     [SerializeField] private TextMeshPro typeText = null;
+    [SerializeField] private TextMeshPro powerText = null;
 
 
     // Start is called before the first frame update
@@ -15,7 +16,7 @@ public class Enemy : MonoBehaviour
         GetComponent<Renderer>().material.color = enemyType.enemyColor;
         transform.localScale = enemyType.enemyScale;
         typeText.text = enemyType.typeName;
-        
+        powerText.text = enemyType.enemyPower.ToString();
     }
 
     

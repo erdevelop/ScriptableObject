@@ -10,4 +10,5 @@ public class EnemyType : ScriptableObject
     public float enemySpeed = 5;
     public Vector3 enemyScale = Vector3.one;
     public string typeName = "type";
+    public int enemyPower = 1;
 }
